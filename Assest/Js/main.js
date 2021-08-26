@@ -71,3 +71,8 @@ openpopups.addEventListener("click", function () {
 closepopup.addEventListener("click", function () {
     document.body.classList.remove("popup-active")
 });
+
+// Gynecologist Html Page Assign Url
+function GynecologistWindow(){
+    window.location.assign('/Gynecologist.html')
+}

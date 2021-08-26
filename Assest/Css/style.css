@@ -872,23 +872,28 @@ body.popup-active .popup {
 body.popup-active .popup-overlay {
     display: block;
 }
-/* Popup 2 Styleing */
-.main__popup1 {
+/* Gynecologist Html Styleing */
+/* Doctor 1 Styleing */
+.main__popups {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0.5rem calc((100vw - 1200px) / 1);
+    row-gap: 2rem;
 }
 .right__div1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 10px 1fr;
     align-items: center;
     border: 1px solid var(--back);
     color: var(--logo);
     font-family: var(--font);
-
+    padding: 2rem;
+}
+.inner__div1 {
+    margin-left: -6rem;
 }
 .right__div1 img {
-    width: 70%;
+    width: 50%;
     padding: 1rem;
     border-radius: 50%;
 }
@@ -898,22 +903,94 @@ body.popup-active .popup-overlay {
     font-family: var(--font);
 }
 .innerpares1,
-.innerpares2 {
+.innerpares2,
+.inner__div__border__1 {
     display: inline-block;
-    padding: 1rem;
+    padding: 0.2rem;
 }
-.innerpares1{
+.inner__div__border__1 {
     border-right: 1px solid var(--back);
+    height: 50px;
 }
-.inner__div1 {
-    border-right: 1px solid green;
-}
-.inner__div2{
-    padding-right: 2rem;
+
+.inner__div__border__2 {
+    border-left: 2px solid var(--back);
+    height: 200px;
+    margin-left: -4rem;
 }
 .innerperas1 {
     font-size: clamp(12px, 5vw, 1.2rem);
     font-weight: bold;
     font-family: var(--font);
     padding-right: 5rem;
+}
+.gys-btn {
+    border: none;
+    outline: none;
+    background-color: var(--back);
+    color: var(--pure);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 40px;
+    text-transform: capitalize;
+}
+
+/* Doctor 2 Styleing */
+.right__div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px 1fr;
+    align-items: center;
+    border: 1px solid var(--back);
+    color: var(--logo);
+    font-family: var(--font);
+    padding: 2rem;
+}
+.inner__div3 {
+    margin-left: -6rem;
+}
+.right__div2 img {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.innerperas {
+    font-size: clamp(12px, 5vw, 1rem);
+    font-weight: bold;
+    font-family: var(--font);
+}
+.innerparess2,
+.innerpares2,
+.inner__div__2__border__1 {
+    display: inline-block;
+    padding: 0.2rem;
+}
+.inner__div__2__border__1 {
+    border-right: 1px solid var(--back);
+    height: 50px;
+}
+
+.inner__div__2__border__2 {
+    border-left: 2px solid var(--back);
+    height: 200px;
+    margin-left: -4rem;
+}
+
+/* .inner__div4{
+    padding-right: 2rem;
+} */
+.innerperas2 {
+    font-size: clamp(12px, 5vw, 1.2rem);
+    font-weight: bold;
+    font-family: var(--font);
+    padding-right: 5rem;
+}
+.gys-btn {
+    border: none;
+    outline: none;
+    background-color: var(--back);
+    color: var(--pure);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 40px;
+    text-transform: capitalize;
 }
