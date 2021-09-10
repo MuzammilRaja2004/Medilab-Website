@@ -836,21 +836,22 @@ textarea:focus {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    column-gap: 3rem;
+    column-gap: 1rem;
     row-gap: 2rem;
     padding: 2rem;
 }
 .main__popup img {
     text-align: center;
-    width: 80%;
+    width: 50%;
     padding: 1rem;
     background-color: var(--back);
     border-radius: 50%;
 }
+
 .popup__peras {
     font-family: var(--font);
     color: var(--logo);
-    font-size: clamp(12px, 5vw, 14px);
+    font-size: clamp(12px, 5vw, 12px);
 }
 
 .popup .popup-close-btn {
@@ -872,6 +873,39 @@ body.popup-active .popup {
 body.popup-active .popup-overlay {
     display: block;
 }
+
+/* Popup Media Query */
+@media screen and (max-width: 900px) {
+    .main__popup {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 1rem;
+    }
+    .popup__peras {
+        font-size: clamp(10px, 5vw, 12px);
+    }
+}
+@media screen and (max-width: 768px) {
+    .popup {
+        padding: 0.5rem;
+    }
+    .main__popup {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 3rem;
+        row-gap: 1rem;
+    }
+    .popup__peras {
+        font-size: clamp(8px, 5vw, 10px);
+    }
+    .main__popup img {
+        padding: 0.5rem;
+    }
+}
+
 /* Gynecologist Html Styleing */
 /* Doctor 1 Styleing */
 .main__popups {
@@ -884,12 +918,17 @@ body.popup-active .popup-overlay {
     display: grid;
     grid-template-columns: 1fr 1fr 10px 1fr;
     align-items: center;
-    border: 1px solid var(--back);
+    width: 100%;
+    height: 100%;
+    box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
     color: var(--logo);
     font-family: var(--font);
     padding: 2rem;
 }
-.inner__div1 {
+.inner__divs1 {
     margin-left: -6rem;
 }
 .right__div1 img {
@@ -918,13 +957,13 @@ body.popup-active .popup-overlay {
     height: 200px;
     margin-left: -4rem;
 }
-.innerperas1 {
+/* .innerperas1 {
     font-size: clamp(12px, 5vw, 1.2rem);
     font-weight: bold;
     font-family: var(--font);
     padding-right: 5rem;
-}
-.gys-btn {
+} */
+/* .gys-btn {
     border: none;
     outline: none;
     background-color: var(--back);
@@ -933,14 +972,19 @@ body.popup-active .popup-overlay {
     font-size: 0.8rem;
     border-radius: 40px;
     text-transform: capitalize;
-}
+} */
 
 /* Doctor 2 Styleing */
 .right__div2 {
     display: grid;
     grid-template-columns: 1fr 1fr 10px 1fr;
     align-items: center;
-    border: 1px solid var(--back);
+    width: 100%;
+    height: 100%;
+    box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
     color: var(--logo);
     font-family: var(--font);
     padding: 2rem;
@@ -974,17 +1018,14 @@ body.popup-active .popup-overlay {
     height: 200px;
     margin-left: -4rem;
 }
-
-/* .inner__div4{
-    padding-right: 2rem;
-} */
+/* 
 .innerperas2 {
     font-size: clamp(12px, 5vw, 1.2rem);
     font-weight: bold;
     font-family: var(--font);
     padding-right: 5rem;
-}
-.gys-btn {
+} */
+/* .gys-btn {
     border: none;
     outline: none;
     background-color: var(--back);
@@ -993,4 +1034,165 @@ body.popup-active .popup-overlay {
     font-size: 0.8rem;
     border-radius: 40px;
     text-transform: capitalize;
+} */
+
+/* Doctor 3 Styleing */
+.right__div3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    color: var(--logo);
+    font-family: var(--font);
+    padding: 2rem;
+}
+.inner__div5 {
+    margin-left: -6rem;
+}
+.right__div3 img {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 50%;
+}
+/* .innerperas {
+    font-size: clamp(12px, 5vw, 1rem);
+    font-weight: bold;
+    font-family: var(--font);
+} */
+.innerparess3,
+.innerpares3,
+.inner__div__3__border__1 {
+    display: inline-block;
+    padding: 0.2rem;
+}
+.inner__div__3__border__1 {
+    border-right: 1px solid var(--back);
+    height: 50px;
+}
+
+.inner__div__3__border__2 {
+    border-left: 2px solid var(--back);
+    height: 200px;
+    margin-left: -4rem;
+}
+
+.innerperas3 {
+    font-size: clamp(12px, 5vw, 1.2rem);
+    font-weight: bold;
+    font-family: var(--font);
+    padding-right: 5rem;
+}
+/* .gys-btn {
+    border: none;
+    outline: none;
+    background-color: var(--back);
+    color: var(--pure);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 40px;
+    text-transform: capitalize;
+} */
+
+/* Doctor Section Media Query */
+@media screen and (max-width: 900px) {
+    /* Doctor 1 Styleing */
+    .inner__divs1 {
+        margin-left: -6rem;
+    }
+    .inner__div__head {
+        font-size: clamp(12px, 5vw, 1.2rem);
+    }
+    .innerperas {
+        font-size: clamp(12px, 5vw, 0.8rem);
+    }
+    .inner__div__border__1 {
+        height: clamp(15px,5vh,25px);
+    }
+    .inner__div__border__2 {
+        border-left: 2px solid var(--back);
+        height: 200px;
+        margin-left: clamp(-2rem, 5vw, -4rem);
+    }
+    .gys-btn {
+        border: none;
+        outline: none;
+        background-color: var(--back);
+        color: var(--pure);
+        padding: clamp(3px, 5vw, 8px);
+        font-size: clamp(4.8px, 5vw, 8px);
+        border-radius: 40px;
+        text-transform: capitalize;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Doctor 1 Styleing */
+
+    .right__div1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 10px 1fr;
+        grid-template-rows: 1fr;
+
+        color: var(--logo);
+        font-family: var(--font);
+        padding: 2rem;
+    }
+    .inner__divs1 {
+        margin-left: -6rem;
+    }
+
+    .inner__div__head {
+        font-size: clamp(12px, 5vw, 1.2rem);
+    }
+    .innerperas {
+        font-size: clamp(12px, 5vw, 0.8rem);
+    }
+    .inner__div__border__1 {
+        height: clamp(10px,5vh,25px);
+    }
+    .gys-btn {
+        border: none;
+        outline: none;
+        background-color: var(--back);
+        color: var(--pure);
+        padding: clamp(3px, 5vw, 8px);
+        font-size: clamp(4.8px, 5vw, 8px);
+        border-radius: 40px;
+        text-transform: capitalize;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* Doctor 1 Styleing */
+
+    .right__div1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 10px 1fr;
+        grid-template-rows: 1fr;
+    }
+    .inner__divs1 {
+        margin-left: -6rem;
+    }
+    .inner__div__head {
+        font-size: clamp(12px, 5vw, 1.2rem);
+    }
+    .innerperas {
+        font-size: clamp(12px, 5vw, 0.8rem);
+    }
+    .inner__div__border__1 {
+        height: clamp(5px,5vh,25px);
+    }
+    .gys-btn {
+        border: none;
+        outline: none;
+        background-color: var(--back);
+        color: var(--pure);
+        padding: clamp(3px, 5vw, 8px);
+        font-size: clamp(4.8px, 5vw, 8px);
+        border-radius: 40px;
+        text-transform: capitalize;
+    }
 }
